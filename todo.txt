@@ -9,3 +9,19 @@ rank?gameCode=&version=&deviceId=&userId=
 
 c.提交分数
 commitScore?gameCode=&version=&deviceId=&userId=&score=
+
+数据库结构
+G_{gameCode}_D_{$deviceId} hash
+gameCode version nickname deviceId userId registerDate
+
+用户分数
+用户排行，只保存分数最高的记录，如果没有nickname则为unname
+G_{gameCode}_D_{$deviceId} list element:{"nickname":"","score":100}
+rpush
+lrange
+
+世界排行
+只保存前10名分数最高的玩家信息，如果没有nickname则为unname
+G_{gameCode}_world list element:{"nickname":"","score":100}
+rpush
+lrange
