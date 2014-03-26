@@ -38,8 +38,8 @@ http://localhost:8000/rankService/commitScore?gameCode=test&version=&deviceId=te
 
 线上服务器
 1、注册
-http://222.126.242.105:8080/rankService/register?gameCode=test&version=&deviceId=test1&nickname=test&userId=
+http://222.126.242.105:8080/wsgi/rankService/register?gameCode=test&version=&deviceId=test1&nickname=test&userId=
 2、获得世界排名
-http://222.126.242.105:8080/rankService/rank?gameCode=test&version=
+http://222.126.242.105:8080/wsgi/rankService/rank?gameCode=test&version=
 3、提交分数
-http://222.126.242.105:8080/rankService/commitScore?gameCode=test&version=&deviceId=test1&userId=&score=1
+http://222.126.242.105:8080/wsgi/rankService/commitScore?gameCode=test&version=&deviceId=test1&userId=&score=1
